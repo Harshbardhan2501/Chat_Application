@@ -1,0 +1,32 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Talk-a-tive is a Full Stack Chatting App.\r Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.\r ## Tech Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [
+    "mern",
+    "chat-app"
+  ],
+  "author": "Harshbardhan",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^3.4.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.12.0",
+    "mongoose": "^5.13.23",
+    "nodemon": "^2.0.22",
+    "react-router-dom": "^5.3.4",
+    "socket.io": "^4.1.2"
+  }
+}
