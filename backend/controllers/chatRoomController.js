@@ -9,7 +9,8 @@ const createChatRoom = async (req, res) => {
   try {
     // Add the current user to the users array
     const user = req.user.id;  // Assuming authentication middleware sets req.user
-    const users = [user, ...userIds];
+    // const users = [user, ...userIds];
+    const users = userIds ? [user, ...userIds] : [user];
 
     const chatRoom = await ChatRoom.create({ name, isGroupChat, users });
 
