@@ -60,6 +60,7 @@ const chatRoomRoutes = require('./routes/chatRoomRoutes');
 const User = require('./models/User');
 const Message = require('./models/Message');
 const ChatRoom = require('./models/ChatRoom');
+const userRoutes = require('./routes/userRoutes');
 
 // Load env variables
 dotenv.config();
@@ -78,6 +79,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/chatrooms', chatRoomRoutes);
+app.use('/api/users', userRoutes);
 
 // Create HTTP server instead of app.listen()
 const server = http.createServer(app);
