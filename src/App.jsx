@@ -14,7 +14,7 @@ function App() {
             <ProtectedRoute>
               <Chat />
             </ProtectedRoute>
-          }
+          } 
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
