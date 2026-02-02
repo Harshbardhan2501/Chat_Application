@@ -1,2 +1,0 @@
-console.log("Decoded Token:", decoded);
-console.log("req.user after DB fetch:", req.user);
